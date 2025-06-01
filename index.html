@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>💸 Expense Tracker</h1>
+      </header>
+
+      <main>
+        <form id="expense-form" autocomplete="off">
+          <input type="text" id="expense-name" placeholder="Expense name" required />
+          <input type="number" id="expense-amount" placeholder="Amount" required />
+          <button type="submit">Add Expense</button>
+        </form>
+
+        <section>
+          <h2>📋 Expenses</h2>
+          <ul id="expense-list">
+
+          </ul>
+        </section>
+
+        <footer id="total">
+          <h3>Total: ₹<span id="total-amount">0.00</span></h3>
+        </footer>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
